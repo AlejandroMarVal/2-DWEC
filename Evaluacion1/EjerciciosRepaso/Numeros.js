@@ -1,4 +1,11 @@
 // 1 Solicite dos números y muestre su suma
+function suma(a, b) {
+    return (a + b);
+    
+}
+
+console.log(suma);
+
 // let num1 = prompt("Dime un número");
 // let num2 = prompt("Dime un número");
 
