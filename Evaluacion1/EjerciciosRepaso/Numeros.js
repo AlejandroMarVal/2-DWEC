@@ -1,10 +1,10 @@
 // 1 Solicite dos números y muestre su suma
-function suma(a, b) {
-    return (a + b);
+// function suma(a, b) {
+//     return (a + b);
     
-}
+// }
 
-console.log(suma);
+// console.log(suma);
 
 // let num1 = prompt("Dime un número");
 // let num2 = prompt("Dime un número");
@@ -378,9 +378,24 @@ console.log(suma);
 
 //  19. Solicite un importe con IVA y lo indique sin IVA
 
-let num = Number(prompt("Dime un precio con IVA y te digo cuanto es sin este"));
-let IVA = 1.21;
+// let num = Number(prompt("Dime un precio con IVA y te digo cuanto es sin este"));
+// let IVA = 1.21;
 
-let precioSinIVA = num/IVA;
+// let precioSinIVA = num/IVA;
 
-alert(`El precio sin IVA es ${precioSinIVA.toFixed(2)}`);
+// alert(`El precio sin IVA es ${precioSinIVA.toFixed(2)}`);
+
+//--------------------------------------------------------------------------------
+
+// 20. Solicite un año e indique si es bisiesto o no
+
+function añoBisiesto(anno) {
+    if (isNan(anno)) {
+        return "no es un número";
+    } else if ((anno % 4 === 0 && anno % 100 !== 0) || (anno % 400 === 0)) {
+        return "es bisiesto";
+    } else {
+        return "no es bisiesto";
+    }
+}
+
